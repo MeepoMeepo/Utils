@@ -1,0 +1,42 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>com.shanghai</groupId>
+  <artifactId>util</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>jar</packaging>
+
+  <name>util</name>
+  <url>http://maven.apache.org</url>
+
+  <properties>
+ 		<jts.version>1.13</jts.version>
+ 		<spatial4j.version>0.5</spatial4j.version>
+ 		<spring-framework.version>4.1.4.RELEASE</spring-framework.version>
+  </properties>
+
+  <dependencies>
+  	<dependency>
+        <groupId>com.vividsolutions</groupId>
+        <artifactId>jts</artifactId>
+        <version>${jts.version}</version>
+    </dependency>
+    <dependency>
+       <groupId>com.spatial4j</groupId>
+       <artifactId>spatial4j</artifactId>
+       <version>${spatial4j.version}</version>
+   </dependency>
+   <dependency>
+		<groupId>org.springframework</groupId>
+		<artifactId>spring-core</artifactId>
+		<version>${spring-framework.version}</version>
+	</dependency>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+</project>
