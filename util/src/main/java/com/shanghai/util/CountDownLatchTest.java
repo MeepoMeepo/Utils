@@ -40,5 +40,6 @@ public class CountDownLatchTest {
 	}
 	public static void main(String[] args) {
 		test();
+		System.exit(0);
 	}
 }
