@@ -40,7 +40,7 @@ public class GeometryUtil {
         	String[] args1 = StringUtil.splitByComma(polygon);
         	StringBuffer sb = new StringBuffer();
         	for (String arg : args1) {
-        		String[] args2 = StringUtil.splitByBlank(arg);
+        		String[] args2 = StringUtil.splitByBlank(arg.trim());
         		sb.append(args2[0]).append(",").append(args2[1]).append(";");
 			}
         	return sb.toString().substring(0,sb.toString().length()-1);
