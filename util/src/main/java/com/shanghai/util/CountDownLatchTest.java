@@ -10,7 +10,7 @@ public class CountDownLatchTest {
 	private static ExecutorService executor = Executors.newFixedThreadPool(20);
 	
 	public static void test(){
-		CountDownLatch countDownLatch = new CountDownLatch(5);
+		final CountDownLatch countDownLatch = new CountDownLatch(5);
 		for (int i=0; i<5;i++) {
 			executor.submit(new Runnable() {
 	
